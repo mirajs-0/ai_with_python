@@ -1,6 +1,6 @@
 def tester(givenstring="Too short"):
     # Print the default value if length of string is < 10
-    if len(givenstring.replace(" ", "")) < 10:
+    if len(givenstring.strip()) < 10:
         print(tester.__defaults__)
     else:
         print (givenstring)
