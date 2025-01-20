@@ -1,3 +1,4 @@
+# Splits a sentence into parts using a seperator ' '
 def my_split(sentence, separator=' '):
     result = []
     current_word = ''
@@ -15,7 +16,7 @@ def my_split(sentence, separator=' '):
 
     return result
 
-
+# Joins elements of a list (items) into a single string, using sperator ','
 def my_join(items, separator=','):
 
     result = ''
