@@ -12,7 +12,7 @@ data = pd.read_csv('50_Startups.csv')
 The variables inside the dataset are: R&D Spend', 'Administration', 'Marketing Spend', 'State', and 'Profit'
 '''
 
-#Drop the state column to create dataframe
+#Drop the column state to create dataframe
 df = data.drop(columns='State')
 
 # Calculate correlations and display correlation using heatmap
