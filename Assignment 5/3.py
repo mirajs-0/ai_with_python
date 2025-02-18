@@ -9,7 +9,7 @@ from sklearn import linear_model
 # Read data from csv file
 data = pd.read_csv('Auto.csv')
 
-#Setup multiple regression
+#Setting up multiple regression
 df = data[['mpg','cylinders', 'displacement', 'horsepower', 'weight', 'acceleration', 'year']] #Excluded 'mpg', 'name' and 'origin'
 x = df.drop(columns='mpg')
 y = df['mpg']
