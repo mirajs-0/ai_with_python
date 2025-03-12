@@ -5,12 +5,10 @@ from sklearn.metrics import confusion_matrix, classification_report
 
 #Load the dataset
 df = pd.read_csv('data_banknote_authentication.csv')
-# print(df.head())
 
 #Defining the features and target variable
 x = df.iloc[:, 0:-1]
 y=df['class']
-# print(y.head())
 
 #Spliting the data into train and test sets
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=20)
