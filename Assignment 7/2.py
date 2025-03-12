@@ -6,12 +6,10 @@ from sklearn.metrics import confusion_matrix, classification_report
 
 #Reading the file
 df = pd.read_csv('suv.csv')
-# print(df.head())
 
 #Selecting features and target variables
 x = df[['Age', 'EstimatedSalary']]
 y = df['Purchased']
-# print(y.head())
 
 #Spliting the data into training and testing data
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=5)
